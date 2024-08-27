@@ -1,12 +1,9 @@
 /**********************************************
- Workshop 2
- Course:APD-545 - Semester- 5
+PIZZERONI APP
  Last Name: Saini
  First Name: Hashmeet Singh
- ID: 153070214
- Section: NAA
- This assignment represents my own work in accordance with Seneca Academic Policy.
- Signature
+ This assignment is a property of Hashmeet Singh
+ Saini.
  Date: February 9th 2024
  **********************************************/
 
