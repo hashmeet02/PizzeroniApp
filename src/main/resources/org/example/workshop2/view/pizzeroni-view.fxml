@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="706.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.workshop2.controllers.AppController">
+   <left>
+      <VBox prefHeight="405.0" prefWidth="301.0" BorderPane.alignment="CENTER">
+         <children>
+            <Accordion prefHeight="501.0" prefWidth="167.0">
+              <panes>
+                <TitledPane style="-fx-background-color: black;" text="Pizza Size">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: black;">
+                           <children>
+                              <GridPane layoutX="29.142857142857146" layoutY="14.285714285714286" prefHeight="130.0" prefWidth="210.0" AnchorPane.bottomAnchor="185.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.14285714285714" minWidth="10.0" prefWidth="225.14285714285714" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.28570556640625" minWidth="0.5714285714285836" prefWidth="0.5714285714285836" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <RadioButton fx:id="sizeS" mnemonicParsing="false" onAction="#setSize" selected="true" text="Small" textFill="WHITE">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="13.0" />
+                                       </font>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="sizeSelect" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="sizeM" mnemonicParsing="false" onAction="#setSize" text="Medium" textFill="WHITE" toggleGroup="$sizeSelect" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="13.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <RadioButton fx:id="sizeL" mnemonicParsing="false" onAction="#setSize" text="Large" textFill="WHITE" toggleGroup="$sizeSelect" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="13.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <RadioButton fx:id="sizeXL" mnemonicParsing="false" onAction="#setSize" text="Extra Large" textFill="WHITE" toggleGroup="$sizeSelect" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="13.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.00" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="\$15.00" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="\$13.00" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="\$10.00" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                </TitledPane>
+                <TitledPane expanded="false" text="Crust Type">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: black;">
+                           <children>
+                              <GridPane layoutX="31.42857142857143" layoutY="31.42857142857143" prefHeight="96.0" prefWidth="198.0" AnchorPane.bottomAnchor="202.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.85714721679688" minWidth="10.0" prefWidth="91.99997820172992" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <RadioButton fx:id="crustNormal" mnemonicParsing="false" onAction="#setCrust" selected="true" text="Normal" textFill="WHITE">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="13.0" />
+                                       </font>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="crustSelect" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="crustThin" mnemonicParsing="false" onAction="#setCrust" text="Thin" textFill="WHITE" toggleGroup="$crustSelect" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="13.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <RadioButton fx:id="crustDeepDish" mnemonicParsing="false" onAction="#setCrust" text="Deep Dish" textFill="WHITE" toggleGroup="$crustSelect" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="13.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                </TitledPane>
+                <TitledPane prefHeight="425.0" prefWidth="190.0" text="Toppings">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: black;">
+                           <children>
+                              <ScrollPane layoutX="10.285714149475098" layoutY="10.285714149475098" prefHeight="396.0" prefWidth="239.42857142857142" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <content>
+                                    <GridPane prefHeight="451.0" prefWidth="261.0" style="-fx-background-color: black;">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.57142857142856" minWidth="10.0" prefWidth="212.57142857142856" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="57.85715103149414" minWidth="0.0" prefWidth="0.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <CheckBox fx:id="pineappleTop" mnemonicParsing="false" onAction="#updateToppings" text="Pineapple" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="extraCheeseTop" mnemonicParsing="false" onAction="#updateToppings" text="Extra Cheese" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="driedShrimpsTop" mnemonicParsing="false" onAction="#updateToppings" text="Dried Shrimps" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="mushroomsTop" mnemonicParsing="false" onAction="#updateToppings" text="Mushrooms" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="anchoviesTop" mnemonicParsing="false" onAction="#updateToppings" text="Anchovies" textFill="WHITE" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="sunDriedTomatoesTop" mnemonicParsing="false" onAction="#updateToppings" text="Sun Dried Tomatoes" textFill="WHITE" GridPane.rowIndex="5">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="daconTop" mnemonicParsing="false" onAction="#updateToppings" text="Dacon" textFill="WHITE" GridPane.rowIndex="6">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="spinachTop" mnemonicParsing="false" onAction="#updateToppings" text="Spinach" textFill="WHITE" GridPane.rowIndex="7">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="roastedGarlicTop" mnemonicParsing="false" onAction="#updateToppings" text="Roasted Garlic" textFill="WHITE" GridPane.rowIndex="8">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="jalapenoTop" mnemonicParsing="false" onAction="#updateToppings" text="Jalapeno" textFill="WHITE" GridPane.rowIndex="9">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="groundBeefTop" mnemonicParsing="false" onAction="#updateToppings" text="Ground Beef" textFill="WHITE" GridPane.rowIndex="10">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="shreddedChickenTop" mnemonicParsing="false" onAction="#updateToppings" text="Shredded Chicken" textFill="WHITE" GridPane.rowIndex="11">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="grilledChickenTop" mnemonicParsing="false" onAction="#updateToppings" text="Grilled Chicken" textFill="WHITE" GridPane.rowIndex="12">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="pepperoniTop" mnemonicParsing="false" onAction="#updateToppings" text="Pepperoni" textFill="WHITE" GridPane.rowIndex="13">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="hamTop" mnemonicParsing="false" onAction="#updateToppings" text="Ham" textFill="WHITE" GridPane.rowIndex="14">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox fx:id="baconTop" mnemonicParsing="false" onAction="#updateToppings" text="Bacon" textFill="WHITE" GridPane.rowIndex="15">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <Label text="\$1.10" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$1.10" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$1.10" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$1.10" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$1.10" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$1.10" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$1.10" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$1.10" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$1.10" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$1.10" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$2.15" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$2.15" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$2.15" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$2.15" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$2.15" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="\$2.15" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="15">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="2.0" right="2.0" />
+                                       </padding>
+                                    </GridPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                </TitledPane>
+              </panes>
+            </Accordion>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets bottom="15.0" left="10.0" top="15.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="483.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Pane prefHeight="435.0" prefWidth="382.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="13.0" layoutY="14.0" prefHeight="119.0" prefWidth="355.0" style="-fx-background-color: black; -fx-border-radius: 20; -fx-background-radius: 20;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.8571515764509" minWidth="10.0" prefWidth="178.2857404436384" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.85717010498047" minWidth="10.0" prefWidth="197.7142595563616" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="custName" onAction="#addCustomerName" prefHeight="25.0" prefWidth="77.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="custPhone" onAction="#addCustomerPhone" prefHeight="25.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="pizzaQty" onAction="#addPizzaQty" text="1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Customer Phone:" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Pizza Qty:" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Customer Name:" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+               <effect>
+                  <DropShadow height="18.33" radius="9.3325" />
+               </effect>
+            </GridPane>
+            <TextArea fx:id="orderInfo" editable="false" layoutX="10.0" layoutY="153.0" prefHeight="268.0" prefWidth="358.0" text="Customer Name:&#10;&#10;Customer Phone:&#10;&#10;Pizza Type:&#10;&#10;Pizza Size:&#10;&#10;Quantity:&#10;&#10;Total before tax:&#10;&#10;Total to be paid: ">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font>
+            </TextArea>
+         </children>
+      </Pane>
+   </right>
+   <top>
+      <Pane style="-fx-background-color: black; -fx-background-radius: 80;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="92.0" fitWidth="116.0" layoutX="6.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pizza-logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="183.0" layoutY="68.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="PIZZERONI" textAlignment="RIGHT" wrappingWidth="371.3265253305435">
+               <font>
+                  <Font name="Aparajita" size="72.0" />
+               </font>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" top="10.0" />
+         </BorderPane.margin>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="53.0" prefWidth="601.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="resetBtn" layoutX="30.0" layoutY="12.0" mnemonicParsing="false" onAction="#resetForm" prefHeight="29.0" prefWidth="112.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Reset" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="placeOrderBtn" layoutX="161.0" layoutY="12.0" mnemonicParsing="false" onAction="#placeOrder" prefHeight="29.0" prefWidth="116.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Place Order" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="infoBox" layoutX="304.0" layoutY="9.0" prefHeight="35.0" prefWidth="388.0" text="(i)- WELCOME" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>
